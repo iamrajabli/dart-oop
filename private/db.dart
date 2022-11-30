@@ -4,10 +4,7 @@ class DB {
   dynamic _pass;
   String? _username;
 
-  DB(dynamic _pass, String _username) {
-    this._pass = _pass;
-    this._username = _username;
-  }
+  DB(this._pass, this._username);
 
   String connect() {
     bool network = this.internet();
